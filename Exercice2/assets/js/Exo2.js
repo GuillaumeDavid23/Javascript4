@@ -1,7 +1,7 @@
 let textBold = false;
 let sizingMax = false;
-
-function bolder(text){
+let text = "";
+function bolder(){
     text = document.getElementById("body");
     if(textBold == true){
         text.style["font-weight"] = "normal"
@@ -13,12 +13,12 @@ function bolder(text){
     }
 }
 
-function color(text){
+function color(){
     text = document.getElementById("body");
     text.style["color"] = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 }
 
-function sizing(text){
+function sizing(){
     text = document.getElementById("body");
     
     if (sizingMax == false){
